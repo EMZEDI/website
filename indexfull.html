@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/dist/outputfull.css">
+    <title>Emzedi</title>
+</head>
+
+<body>
+    <!-- This will be body! -->
+    <div class="space-y-2 bg-gray-800 px-3 py-2 text-violet-300 sm:space-y-3 sm:px-6 md:space-y-4 md:px-16 lg:px-32 font-spaceMono"
+        id="body">
+        <!-- The navbar tbd -->
+
+        <!-- NAVBAR -->
+        <nav class="bg-gray-800">
+            <div class="max-w-10xl mx-auto pt-9">
+                <div class="relative flex items-center justify-between h-16">
+                    <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                        <!-- Mobile menu button-->
+                        <button type="button"
+                            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                            aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <!--
+          Icon when menu is closed.
+
+          Heroicon name: outline/menu
+
+          Menu open: "hidden", Menu closed: "block"
+        -->
+                            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                            <!--
+          Icon when menu is open.
+
+          Heroicon name: outline/x
+
+          Menu open: "block", Menu closed: "hidden"
+        -->
+                            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                        <div class="flex-none flex items-center">
+                            <div class="logo font-rubik-900">MZ</div>
+
+                        </div>
+                        <div class="hidden sm:block sm:ml-6 pt:1.5">
+                            <div class="flex space-x-4 text-xl">
+                                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                                <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md "
+                                    aria-current="page">Dashboard</a>
+
+                                <a href="#AboutMe"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">About
+                                    me</a>
+
+                                <a href="#"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">projects</a>
+
+                                <a href="#"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md ">skills</a>
+
+                                <a href="#"
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">contact
+                                    me</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- for the dark mode / TBD -->
+                    <!-- <div
+                        class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"> -->
+                        <!-- <button type="button"
+                            class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"> -->
+                            <!-- <span class="sr-only"></span> -->
+                            <!-- Heroicon name: outline/bell -->
+                            <!-- <svg class="h-9 w-9 pr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg> -->
+
+                        <!-- </button> -->
+
+                    <!-- </div> -->
+                </div>
+            </div>
+
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="sm:hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                    <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-DynaPuff"
+                        aria-current="page">Dashboard</a>
+
+                    <a href="#"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base ">projects</a>
+
+                    <a href="#"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base">projects</a>
+
+                    <a href="#"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base">skills</a>
+
+                    <a href="#"
+                        class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base">contact
+                        me</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- A container including the welcome messages and code snippets + the pfp -->
+        <div class="font-spaceMono flex flex-row md:pb-6">
+
+            <!-- first column the text -->
+            <div class="sm:space-y-3 md:space-y-9 lg:space-y-11 basis-9/12 bg-center relative md:pt-12">
+                <div class="text-5xl sm:text-6xl md:text-9xl ayo flex px-auto text-center place-content-center">
+                    <div class="font-DynaPuff">Hello World!</div>
+                    <div class="absolute font-DynaPuff">Hello World!</div>
+                </div>
+                <div class="text-2xl text-center pb-6 typer">This is <span
+                        class="bold italic underline bg-gray-700 rounded-md text-violet-500 hover:text-violet-300 ">Shahrad</span>
+                    :) Welcome
+                    to my website!</div>
+                <div
+                    class="bg-cyan-300/25 rounded-2xl text-green-300 hover:text-green-700 text-center max-w-sm m-auto text-xl mt-8">
+                    <span class="underline decoration-blue-500 text-pink-400/75">print("</span><span
+                        class="hover:bg-blue-700/25 rounded-2xl">I am
+                        a software developer.</span> <span
+                        class="underline decoration-blue-500 text-pink-400/75">")</span>
+                </div>
+                <div
+                    class="bg-cyan-300/25 rounded-2xl text-green-300 hover:text-green-700 text-center max-w-lg m-auto text-xl ">
+                    <span class="underline decoration-blue-500 text-pink-400/75">console.log("</span><span
+                        class="hover:bg-blue-700/25 rounded-2xl">+ a pro
+                        piano performer.</span><span class="underline decoration-blue-500 text-pink-400/75">")</span>
+                </div>
+                <div
+                    class="bg-cyan-300/25 rounded-2xl text-green-300 hover:text-green-700 text-center max-w-lg m-auto text-xl">
+                    <span class="underline decoration-blue-500 text-pink-400/75">system.out.println("</span><span
+                        class="hover:bg-blue-700/25 rounded-2xl">+ oh Also
+                        looking for a summer 2023
+                        internship XD. Now scroll!</span><span
+                        class="underline decoration-blue-500 text-pink-400/75">")</span>
+                </div>
+                <!-- To be completed with typescript -->
+
+                <!-- social media on start they appear as if something is being put on the table -->
+                <div class="flex justify-center md:gap-12 ">
+                    <a target="_blank" href="https://www.linkedin.com/in/shahrad-m-88970b212"
+                        class="fill-cyan-100/50 w-10 hover:fill-cyan-300 hover:scale-125 ease-out duration-500 pt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a target="_blank" href="https://github.com/EMZEDI"
+                        class="fill-cyan-100/50 w-10 hover:fill-cyan-300 hover:scale-125 ease-out duration-500 pt-3 ml-2 mr-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
+                        </svg>
+                    </a>
+                    <a target="_blank" href="mailto:shahrad.mohammadzadeh@mcgill.ca"
+                        class="fill-cyan-100/50 hover:fill-cyan-300 hover:scale-110 ease-out duration-500 md:h-16 md:w-16 w-14">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <g data-name="Layer 2">
+                                <path
+                                    d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm0 2-6.5 4.47a1 1 0 0 1-1 0L5 6z" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="row-span-1">
+
+                    <!-- second column the picture-->
+                    <img class="max-w-xs lg:max-h-max px-auto place-content-center " src="pictures/figure3.png"
+                        alt="shahradmzpfp">
+                </div>
+            </div>
+        </div>
+        <!-- about me -->
+        <div>
+            <div class="container mx-auto pt-2 sm:pt-3 md:pt-4">
+                <div class="pl-3 pt-1 text-xl sm:text-3xl md:text-4xl rounded-xl text-center md:pb-6">
+                    <a class="uppercase font-mono text-violet-200 font-bold " href="#AboutMe" id="AboutMe">About me</a>
+                </div>
+                <!-- List about me -->
+                <div class="text-cyan-400/100 py-6">
+                    <ul class="list-disc list-inside space-y-6 pl-5 text-justify">
+                        <li class="">Shahrad is a passionate and experienced <span
+                                class="container bg-slate-700 rounded-xl hover:bg-purple-400/50">software
+                                developer</span> with a strong
+                            background in <span
+                                class="container bg-slate-700 rounded-xl hover:bg-purple-400/50">python</span> language.
+                            He has just finished his summer job @ the <a
+                                class=" underline container bg-slate-700 rounded-xl hover:bg-purple-400/50"
+                                href="https://ddmal.music.mcgill.ca">DDMAL</a> Music Tech Lab @ <a
+                                class="underline container bg-slate-700 rounded-xl hover:bg-purple-400/50"
+                                href="https://mcgill.ca">McGill University</a> as a <span
+                                class="container bg-slate-700 rounded-xl hover:bg-purple-400/50">full stack
+                                developer</span> and is continuing
+                            his
+                            studies as an <span class="container bg-slate-700 rounded-xl hover:bg-purple-400/50">Honours
+                                Computer
+                                Science</span> student @ McGill University with a minor in <span
+                                class="container bg-slate-700 rounded-xl hover:bg-purple-400/50">Philosophy</span>. His
+                            learning is mainly
+                            focused on <span class="container bg-slate-700 rounded-xl hover:bg-purple-400/50">AI and
+                                ML</span>.
+                            You can also find him socializing happily and grooving on the piano!</li>
+                        <li>
+                            Shahrad is looking for <span
+                                class="container bg-slate-700 rounded-xl hover:bg-purple-400/50">internship</span>
+                            opportunities for <span
+                                class="container bg-slate-700 rounded-xl hover:bg-purple-400/50">summer 2023</span>. He
+                            is highly interested in
+                            doing <span class="container bg-slate-700 rounded-xl hover:bg-purple-400/50">Machine
+                                Learning development,
+                                Data Science, and Full-stack development as well as Research</span> on the mentioned
+                            areas.
+                        </li>
+                        <li>To figure out more about his work experience, computer science knowledge, and interests, you
+                            can start off with the <a
+                                class="container bg-slate-700 rounded-xl hover:bg-purple-400/50 underline"
+                                href="#Projects">Projects</a> section!
+
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        
+
+
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
