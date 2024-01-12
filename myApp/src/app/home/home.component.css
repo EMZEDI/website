@@ -1,35 +1,21 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Space+Mono:wght@700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
 /* animation */
 .ayo div {
 	color:  rgb(196 181 253);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,93,1) 48%, rgba(0,212,255,1) 100%);
     -webkit-background-clip: text;
-    transform: translate(0%, 0%);
-    -webkit-text-fill-color: transparent;
 }
 
-.ayo div:nth-child(1) {
+/* .ayo div:nth-child(1) {
 	color: transparent;
-	-webkit-text-stroke: 2px  rgb(196 181 253);
-   
-}
+} */
 
-.ayo div:nth-child(2) {
-    color:  rgb(196 181 253);
-    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(121,9,93,1) 48%, rgba(2,0,36,1) 100%);
-    -webkit-background-clip: text;
-	animation: animate 2s ease-in-out infinite;
-}
+/* .ayo div:nth-child(2) {
+    /* color:  rgb(196 181 253); */
+    /* background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(121,9,93,1) 48%, rgba(2,0,36,1) 100%); */
+    /* -webkit-background-clip: text; */
+/* } */ 
 
-@keyframes animate {
+/* @keyframes animate {
 	0%,
 	100% {
 		clip-path: polygon(
@@ -58,7 +44,7 @@
 			0% 100%
 		);
 	}
-}
+} */
 /* animation */
 
 /* header bar for the headings */
@@ -68,7 +54,7 @@
 	border-top: 7px solid rgba(184, 160, 195, 0.926);
 	border-left: 7px solid rgba(184, 160, 195, 0.926);
 	box-shadow: 4px 4px 5px rgba(251, 246, 255, 0.267) inset;
-    
+
 }
 
 .logo {

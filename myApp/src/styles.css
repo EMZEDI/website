@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,7 +20,7 @@
 .ayo div:nth-child(1) {
 	color: transparent;
 	-webkit-text-stroke: 2px  rgb(196 181 253);
-   
+
 }
 
 .ayo div:nth-child(2) {
@@ -68,7 +69,7 @@
 	border-top: 7px solid rgba(184, 160, 195, 0.926);
 	border-left: 7px solid rgba(184, 160, 195, 0.926);
 	box-shadow: 4px 4px 5px rgba(251, 246, 255, 0.267) inset;
-    
+
 }
 
 .logo {

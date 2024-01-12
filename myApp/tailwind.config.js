@@ -11,6 +11,7 @@ module.exports = {
         'rubik-900' : ['"Rubik"', 'sans-serif'],
         'alegreya' : ['Alegreya', 'serif'],
         'spaceMono' : ['"Space Mono"', 'monospace'],
+        'roboto': ['Roboto', 'sans-serif'],
       },
     },
   },
